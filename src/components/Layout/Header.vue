@@ -52,7 +52,7 @@ export default {
   setup() {
     const token = localStorage.getItem("token");
     const isLogin = token !== null && token !== "";
-    const router = useRouter();
+    //const router = useRouter();
 
     const logout = () => {
       getApi("/users/logout")
